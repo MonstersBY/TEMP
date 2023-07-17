@@ -36,3 +36,35 @@
         line-height: 130%;
     }
 }
+
+@media (max-width: 48em) {
+    .header {
+        position: absolute;
+        top: 3rem;
+
+        &__logo {
+            width: 9.4rem;
+            margin-right: 0;
+        }
+
+        &__burger {
+            width: 6.4rem;
+            height: 3.2rem;
+        }
+
+        &__list {
+            display: flex;
+            gap: 8rem;
+        }
+        &__item {
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 145%;
+        }
+        &__phone {
+            width: 5.6rem;
+            height: 5.6rem;
+        }
+    }
+}

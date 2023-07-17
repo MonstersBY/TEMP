@@ -97,7 +97,9 @@ ul li {
     padding: 0;
     list-style: none;
 }
-
+section:first-of-type {
+    padding-top: 18rem;
+}
 .container {
     width: 172rem;
     margin: 0 auto;
@@ -129,8 +131,12 @@ section {
         -webkit-text-size-adjust: none;
     }
 
+    section:first-of-type {
+        padding-top: 19rem;
+    }
+
     .container {
-        padding: 0 4rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+        padding: 0 2rem; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
         width: 100%;
     }
 }

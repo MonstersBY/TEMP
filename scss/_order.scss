@@ -1,4 +1,5 @@
 .order {
+    margin-top: 14.4rem;
     margin-bottom: 14.4rem;
     .container {
         display: flex;
@@ -63,5 +64,67 @@
         width: 94.0444rem;
         height: 52.9rem;
         margin: -14.4rem 0;
+    }
+}
+
+@media (max-width: 48em) {
+    .order {
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        &-left {
+            width: auto;
+            margin-bottom: 5.4rem;
+    
+            &__title {
+                font-size: 4.4rem;
+                margin-bottom: 2.4rem;
+            }
+            &__text {
+                width: auto;
+                margin-bottom: 6.4rem;
+            }
+            &__form {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: unset;
+                gap: 4rem;
+    
+                .input {
+                    font-size: 2.6rem;
+                    padding: 3.4rem 4rem;
+                    width: 100%;
+
+                }
+            }
+            &__btn {
+                font-size: 3.6rem;
+                padding-right: 13rem;
+                position: relative;
+                width: fit-content;
+    
+                &::after {
+                    content: '';
+                    display: block;
+                    background: url(../img/icon/arrow-right.svg) no-repeat;
+                    background-size: cover;
+                    width: 5rem;
+                    height: 3rem;
+                    position: absolute;
+                    right: 0;
+                    top: 20%;
+    
+                }
+            }
+        }
+        &-right {
+            width: auto;
+            height: auto;
+            margin: 0;
+        }
     }
 }

@@ -24,11 +24,48 @@ baner_swiper.on('slideChange', function (x) {
 })
 
 var bestsellers_swiper = new Swiper(".bestsellers-swiper", {
-    spaceBetween: rem(4.4),
-    slidesPerView: 4,
-    slidesPerGroup: 4,
+    spaceBetween: rem(0),
+    slidesPerView: 2,
+    slidesPerGroup: 2,
+    grid: {
+        rows:2,
+    },
     navigation: {
         nextEl: ".bestsellers-button-next",
         prevEl: ".bestsellers-button-prev",
     },
+    breakpoints: {
+        769: {
+            slidesPerView: 4,
+            slidesPerGroup: 4,
+            spaceBetween: rem(4.4),
+            grid: {
+                rows:1,
+            },
+        }
+    }
 });
+
+bestsellersBorder()
+
+$( window ).on( "resize", function(x) {
+    bestsellersBorder()
+});
+
+function bestsellersBorder() {
+    if($('.bestsellers-swiper').length){
+        if ($( window ).width() < 769) {
+            $('.bestsellers-slide').each(function (x){
+                if (x%4 == 0 || x%4 == 1) {
+                    $(this).css('border-right','1px solid rgba(18, 24, 32, 0.20)')
+                }
+            })
+        } else {
+            $('.bestsellers-slide').each(function (x){
+                if (x%4 == 0 || x%4 == 1) {
+                    $(this).css('border-right','unset')
+                }
+            })
+        }
+    }
+}

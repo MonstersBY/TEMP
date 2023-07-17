@@ -14,16 +14,22 @@
 
 <header class="header" id="header">
     <div class="container">
+        <div class="header__burger mobile">
+            <img src="./img/icon/burger.svg" alt="">
+        </div>
         <a href="" class="header__logo">
             <img src="./img/icon/logo.svg" alt="">
         </a>
-        <div class="header__list">
+        <div class="header__list desktop">
             <a href="" class="header__item">Каталог</a>
             <a href="" class="header__item">О нас</a>
             <a href="" class="header__item">Контакты</a>
             <a href="" class="header__item">Статьи</a>
         </div>
-        <div class="header__phone">+7 (926) 731 83 54</div>
+        <div class="header__phone desktop">+7 (926) 731 83 54</div>
+        <div class="header__phone mobile">
+            <img src="./img/icon/phone-blank.svg" alt="">
+        </div>
     </div>
 </header>
 
@@ -67,7 +73,7 @@
                                 <div class="baner-slide__img">
                                     <img src="./img/baner-img.jpg" alt="">
                                 </div>
-                                <div class="baner-slide__logo">
+                                <div class="baner-slide__logo desktop">
                                     <img src="./img/icon/logo.svg" alt="">
                                 </div>
                                 <div class="baner-slide__title title-text">Масла по низу прайса</div>
@@ -79,7 +85,7 @@
                                 <div class="baner-slide__img">
                                     <img src="./img/baner-img.jpg" alt="">
                                 </div>
-                                <div class="baner-slide__logo">
+                                <div class="baner-slide__logo desktop">
                                     <img src="./img/icon/logo.svg" alt="">
                                 </div>
                                 <div class="baner-slide__title title-text">Масла по низу прайса</div>
@@ -91,7 +97,31 @@
                                 <div class="baner-slide__img">
                                     <img src="./img/baner-img.jpg" alt="">
                                 </div>
-                                <div class="baner-slide__logo">
+                                <div class="baner-slide__logo desktop">
+                                    <img src="./img/icon/logo.svg" alt="">
+                                </div>
+                                <div class="baner-slide__title title-text">Масла по низу прайса</div>
+                                <div class="baner-slide__text normal-text">Компания ООО «ТЕМП» занимается продажей автомобильных</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="baner-slide">
+                                <div class="baner-slide__img">
+                                    <img src="./img/baner-img.jpg" alt="">
+                                </div>
+                                <div class="baner-slide__logo desktop">
+                                    <img src="./img/icon/logo.svg" alt="">
+                                </div>
+                                <div class="baner-slide__title title-text">Масла по низу прайса</div>
+                                <div class="baner-slide__text normal-text">Компания ООО «ТЕМП» занимается продажей автомобильных</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="baner-slide">
+                                <div class="baner-slide__img">
+                                    <img src="./img/baner-img.jpg" alt="">
+                                </div>
+                                <div class="baner-slide__logo desktop">
                                     <img src="./img/icon/logo.svg" alt="">
                                 </div>
                                 <div class="baner-slide__title title-text">Масла по низу прайса</div>
@@ -184,11 +214,13 @@
                 <div class="title-text-italic">Работайте с официальным дилером!</div>
             </div>
             <div class="dealer-right">
-                <div class="dealer-right__img">
-                    <img src="./img/main/dealer-doc.jpg" alt="">
-                </div>
-                <div class="dealer-right__img">
-                    <img src="./img/main/dealer-doc.jpg" alt="">
+                <div class="dealer-right-container">
+                    <div class="dealer-right__img">
+                        <img src="./img/main/dealer-doc.jpg" alt="">
+                    </div>
+                    <div class="dealer-right__img">
+                        <img src="./img/main/dealer-doc.jpg" alt="">
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,82 +232,98 @@
             <div class="swiper bestsellers-swiper white">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-1.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-2.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-1.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-2.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-1.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-2.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-1.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
                     <div class="swiper-slide bestsellers-slide">
-                        <div class="bestsellers-slide__number normal-text">208 л.</div>
+                        <div class="bestsellers-slide__number normal-text desktop">208 л.</div>
+                        <div class="bestsellers-slide__title normal-text mobile">RP ELITE INJECTION 10W40</div>
                         <div class="bestsellers-slide__img">
                             <img src="./img/main/oil-2.png" alt="">
                         </div>
                         <div class="bestsellers-slide-container">
-                            <div class="bestsellers-slide__title normal-text">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__title normal-text desktop">RP ELITE INJECTION 10W40</div>
+                            <div class="bestsellers-slide__number normal-text mobile">208 л.</div>
                             <a class="bestsellers-slide__link normal-text">Подробнее</a>
                         </div>
                     </div>
@@ -344,7 +392,8 @@
             <div class="footer-bottom__info">ООО "ТЕМП" ИНН 7704803582</div>
             <div class="footer-bottom__text">Публичная оферта</div>
             <div class="footer-bottom__logo">
-                <img src="./img/icon/RD-logo.svg" alt="">
+                <img class="desktop" src="./img/icon/RD-logo.svg" alt="">
+                <img class="mobile" src="./img/icon/RD-logo-m.svg" alt="">
             </div>
         </div>
     </div>
