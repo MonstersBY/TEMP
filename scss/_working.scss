@@ -1,0 +1,101 @@
+.working {
+    margin-bottom: 15rem;
+    .container {
+        display: flex;
+        gap: 4.4rem;
+        align-items: flex-end;
+    }
+    &__title {
+        margin-bottom: 12rem;
+    }
+    &-left {
+        flex: 1;
+    }
+    &-container {
+        padding: 0 2.8rem;
+        border-top: 1px solid rgba(18, 24, 32, 0.20);
+        border-bottom: 1px solid rgba(18, 24, 32, 0.20);
+        display: flex;
+        gap: 2.8rem;
+        margin: 4rem 0;
+    }
+    &-item {
+        position: relative;
+        padding: 4rem 2rem 0;
+        width: 24.2rem;
+        height: 30.5rem;
+        cursor: default;
+
+        &::after, &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 1px;
+            height: calc(38rem + 2px);
+            background: rgba(18, 24, 32, 0.20);
+            top: -4rem;
+        }
+        &::after {
+            right: 0;
+        }
+        &::before {
+            left: 0;
+        }
+
+        &__number {
+            position: absolute;
+            display: flex;
+            border-radius: 1rem;
+            width: 3.6rem;
+            height: 3.6rem;
+            padding: 0.8rem 1rem;
+            top: 2rem;
+            right: 2rem;
+            background: #FFF;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+        }
+        &__icon {
+            width: 4.4rem;
+            height: 4.4rem;
+            margin-bottom: 3.2rem;
+
+            svg {
+                width: 4.4rem;
+                height: 4.4rem;
+            }
+        }
+        &__title {
+            margin-bottom: 1.6rem;
+        }
+        &__text {
+            color: #7C7C7C;
+        }
+        &:hover {
+            background: #121820;
+
+            path {
+                fill: #FFF;
+            }
+            .working-item__number {
+                opacity: 1;
+            }
+            .working-item__title {
+                color: #FFF;
+            }
+            .working-item__text {
+                color: #FFF;
+            }
+        }
+    }
+    &-right {
+        width: 54.4rem;
+        height: 55.2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
