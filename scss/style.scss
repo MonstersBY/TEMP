@@ -234,7 +234,8 @@
 @import "bestsellers";
 @import "seo";
 @import "order";
-
+@import 'category';
+@import 'catalog';
 
 @media (min-width: 48.01em) {
   .mobile {
