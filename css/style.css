@@ -454,6 +454,9 @@ section {
   .header.white .logo-black {
     display: unset;
   }
+  .header.active {
+    z-index: 10;
+  }
   .header__burger {
     display: block;
     position: relative;

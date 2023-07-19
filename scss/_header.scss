@@ -92,6 +92,9 @@
                 display: unset;
             }
         }
+        &.active {
+            z-index: 10;
+        }
 
         &__burger {
             display: block;
