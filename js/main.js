@@ -95,5 +95,5 @@ $(document).ready(function() {
 
         map.geoObjects.add(placemark)
     }
-    ymaps.ready(init);
+    if($('.contacts').length) ymaps.ready(init);
 });

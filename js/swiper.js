@@ -69,3 +69,64 @@ function bestsellersBorder() {
         }
     }
 }
+
+var articles_swiper = new Swiper(".articles-swiper", {
+    spaceBetween: rem(3.2),
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    grid: {
+        rows:5,
+    },
+    navigation: {
+        nextEl: ".articles-button-next",
+        prevEl: ".articles-button-prev",
+    },
+    pagination: {
+        el: ".articles-pagination",
+        type: "custom",    
+        renderCustom: function (swiper, current, total) {
+            return `<span class="articles-swiper__number-now">${current}</span><span class="articles-swiper__number-all">${total}</span>`; 
+        }
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            spaceBetween: rem(4.4),
+            grid: {
+                rows:3,
+            },
+        }
+    }
+});
+
+var article_page_swiper = new Swiper(".article-page-swiper", {
+    spaceBetween: rem(1),
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    grid: {
+        rows:1,
+    },
+    navigation: {
+        nextEl: ".article-page-button-next",
+        prevEl: ".article-page-button-prev",
+    },
+    pagination: {
+        el: ".article-page-pagination",
+        type: "custom",    
+        renderCustom: function (swiper, current, total) {
+            return `<span class="article-page-swiper__number-now">${current}</span><span class="article-page-swiper__number-all">${total}</span>`; 
+        }
+    },
+    breakpoints: {
+        769: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: rem(6),
+            grid: {
+                rows:2,
+            },
+        }
+    }
+});
+

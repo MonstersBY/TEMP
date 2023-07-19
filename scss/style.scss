@@ -29,6 +29,7 @@
   .swiper-button-prev, .swiper-button-next {
     width: 4rem;
     height: 4rem;
+    margin-top: 0;
     &.swiper-button-disabled {
         opacity: 1;
     }
@@ -115,6 +116,15 @@
             }
         }
     }
+  }
+}
+.main-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6rem;
+
+  .title-text {
+    margin-right: 47.1rem;
   }
 }
 
@@ -222,6 +232,20 @@
       }
     }
   }
+  .main-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.4rem;
+    margin-bottom: 6.4rem;
+  
+    .title-text {
+      margin-right: auto;
+    }
+    .title-text-italic {
+      margin-right: auto
+    }
+  }
 }
 
 
@@ -239,6 +263,8 @@
 @import 'product-page';
 @import 'modal-box';
 @import 'contacts';
+@import 'articles';
+@import 'article-page';
 
 @media (min-width: 48.01em) {
   .mobile {
