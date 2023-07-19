@@ -3075,6 +3075,11 @@ section {
     margin: 0 -2rem;
   }
 }
+.articles {
+  background: url(../img/icon/seo-logo1.svg) no-repeat;
+  background-size: 64.5625rem 50.7rem;
+  background-position: 117.5rem 10rem;
+}
 .articles-swiper {
   position: relative;
   margin-bottom: -6rem;
@@ -3206,6 +3211,11 @@ section {
 }
 
 @media (max-width: 48em) {
+  .articles {
+    background: url(../img/icon/seo-logo1.svg) no-repeat;
+    background-size: 63rem 49.6rem;
+    background-position: 10rem 27rem;
+  }
   .articles-swiper {
     position: relative;
     margin-bottom: -6.4rem;
