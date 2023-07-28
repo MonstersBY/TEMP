@@ -63,37 +63,4 @@ $(document).ready(function() {
         });
     }
 
-    
-    function init(){
-        // Создание карты.
-        var map = new ymaps.Map("map", {
-            center: [55.797286, 37.655436],
-            zoom: 15,
-        },{
-            yandexMapDisablePoiInteractivity: true
-        });
-
-        let placemark = new ymaps.Placemark([55.797286, 37.655436], {}, {
-            iconLayout: 'default#image',
-            iconImageHref: '../img/icon/location-black.svg',
-            iconImageSize: [32, 32],
-            iconImageOffset: [-16,-32],
-        })
-
-        map.controls.remove('geolocationControl');
-        map.controls.remove('searchControl');
-        map.controls.remove('trafficControl');
-        map.controls.remove('typeSelector');
-        map.controls.remove('fullscreenControl');
-        map.controls.remove('zoomControl');
-        map.controls.remove('rulerControl');
-        map.controls.remove('scrollZoom');
-        map.controls.remove('drag');
-        map.behaviors.disable('drag')
-        map.behaviors.disable(['scrollZoom']);
-        map.behaviors.disable('multiTouch')
-
-        map.geoObjects.add(placemark)
-    }
-    if($('.contacts').length) ymaps.ready(init);
 });
